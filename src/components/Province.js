@@ -22,4 +22,4 @@ function Province ({name, cities, index }) {
         </li>
     )
 }
-export default Province
+export default Province;

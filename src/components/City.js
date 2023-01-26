@@ -19,4 +19,4 @@ function City({name,towns,index}) {
     )
 }
 
-export default City
+export default City;

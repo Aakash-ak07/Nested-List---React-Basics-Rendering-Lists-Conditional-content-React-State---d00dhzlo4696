@@ -157,20 +157,19 @@ const states = [
 ];
 
 function App() {
-  const[state, setState] = useState(states);
+  const [state, setState] = useState(states)
+
   return (
-    <div id="main">
-      <ul>{
-        state.map(items => (
-          <Province 
-          index={state.indexOf(items)} 
-          name={item.name} 
-          cities={itemsm.cities} />
-        ))
-      }
-      </ul>
-    </div>
-  )
+  <div id="main">
+  <ul>
+    {
+      state.map(item=>(
+        <Province index={state.indexOf(item)} name={item.name} cities={item.cities}  />
+      ))
+    }
+    </ul>
+  </div>
+  );
 }
 
 export default App;
